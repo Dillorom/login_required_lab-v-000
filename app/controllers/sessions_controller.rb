@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if params[:name].nil? || params[:name].enpty?
+    if params[:name].nil? || params[:name].blank?
       redirect_to login_path
     else
 
