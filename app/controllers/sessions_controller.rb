@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     if params[:name].nil? || params[:name].enpty?
       redirect_to login_path
     else
-      
+
     end
   end
 
