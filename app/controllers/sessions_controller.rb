@@ -11,7 +11,9 @@ class SessionsController < ApplicationController
     end
   end
 
-  def show
+  def destroy
+    session.delete :name
+    redirect_to root_path
   end
 
 end
