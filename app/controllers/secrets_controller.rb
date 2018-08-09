@@ -1,5 +1,5 @@
 class SecretsController < ApplicationController
-  def show
+  get show
     if !logged_in
       redirect_to login_path
 
